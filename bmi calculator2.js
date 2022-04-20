@@ -30,5 +30,3 @@ document.getElementById('bmiButton').onclick = function(){
 
 
 
-
-// console.log(give_me_bmi(height = height,weight = weight));
