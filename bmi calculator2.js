@@ -10,7 +10,6 @@ function give_me_bmi(height, weight) {
         return 'obese'
     }
 }
-//var weight = window.prompt("enter weight in lb");
 
 
 
