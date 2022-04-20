@@ -1,19 +1,16 @@
 function give_me_bmi(height, weight) {
-    bmi = (weight / height ** 2) * 703
+    bmi = (weight / (height * height)) * 703
     if (bmi < 18.5) {
         return 'underweight'
-    } else if (bmi < 25) {
+    } else if (bmi >=18.5 && bmi < 24.9) {
         return 'healthy weight'
-    } else if (bmi < 30) {
+    } else if (bmi >= 25 && bmi <29.9) {
         return 'overweight'
-    } else {
+    } else if (bmi >30) {
         return 'obese'
-    }
+    } else
+     return alert('please enter the valid input')
 }
-//var weight = window.prompt("enter weight in lb");
-
-
-
 
 
 document.getElementById('bmiButton').onclick = function(){
@@ -25,8 +22,9 @@ document.getElementById('bmiButton').onclick = function(){
     bmi = give_me_bmi(height = height,weight = weight)
     console.log("BMI:"+ bmi);
 
-    document.getElementById('output').innerHTML = "your BMI is: "+bmi
+    document.getElementById('output').innerHTML = "You are : "+bmi
 }
-
-
+document.getElementById('bmireset').onclick=function(){
+    document.getElementById('output').innerHTML= ""
+}
 
