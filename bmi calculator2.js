@@ -27,3 +27,4 @@ document.getElementById('bmiButton').onclick = function(){
 document.getElementById('bmireset').onclick=function(){
     document.getElementById('output').innerHTML= ""
 }
+
